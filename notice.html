@@ -39,7 +39,7 @@
 
 <body>
 
-    <div class="wrapper">
+    < class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
 
@@ -64,28 +64,20 @@
         </nav>
 
         <!-- Page Content  -->
-        <div id="content">
+     
 
 
-          <button type="button" id="sidebarCollapse" class="btn  " style="background: rgb(115, 134, 213);">
-            <i class="fas fa-bars text-light"></i>
-
-          </button>
-
-
-        </div>
-
-      </div>
-    </div>
+     
+    
 
     <section id="you-us">
 
       <div class="container" >
         <div class="row" style="width: 70vw;">
-          <div class="col-md-4 d-flex align-items-center">
+          <div class="col-md-6 d-flex align-items-center">
             <img src="ressources/Logo-bruand.png" alt="">
           </div>
-          <div class="col-md-8"> <h2>Parceque notre metier n'est pas que la serrurerie mais aussi une envie continue de satisfaire nos clients!</h2></div>
+          <div class="col-md-6"> <h2>Parceque notre metier n'est pas que la serrurerie mais aussi une envie continue de satisfaire nos clients!</h2></div>
         </div>
       </div>
       <div class="container">
@@ -271,8 +263,9 @@
   
           </div>
         </div>
+        </section>
       </section>
-
+    </section>
 
 
 
@@ -289,8 +282,19 @@
                 </div>
               </div>
             </div>
-          </footer>-->
+          </footer>
+        
+        
+      
+      <div id="content">
 
+
+        <button type="button" id="sidebarCollapse" class="btn  " style="background: rgb(115, 134, 213);">
+          <i class="fas fa-bars text-light"></i>
+
+        </button>
+      </div>
+    </div>
 
 <!-- jQuery CDN -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -311,7 +315,8 @@
 <!--slick-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
 
-<script type="text/javascript">
+<script >
+  //SIDE NAV BAR
   $(document).ready(function () {
       $("#sidebar").mCustomScrollbar({
           theme: "minimal"
@@ -323,21 +328,17 @@
           $('a[aria-expanded=true]').attr('aria-expanded', 'false');
       });
   });
-</script>
 
-<script>
-
-    // SLIDER INIT
+  // SLIDER INIT
     $('.slider').slick({
       infinite: true,
       slideToShow: 1,
       slideToScroll: 1
     })
-
-
   //  copyright
   $('#year').text(new Date().getFullYear())
 </script>
+
 </body>
 
 

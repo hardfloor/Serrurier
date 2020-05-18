@@ -19,8 +19,8 @@
   
   h1{
     font-size: 5rem;
-    line-height:1.2em;
-    letter-spacing: 1.1rem;
+    line-height:2em;
+    letter-spacing: 1.5rem;
     color:white;
     text-align: left;
     
@@ -65,6 +65,7 @@ a:focus {
 .wrapper {
     display: flex;
     width: 100%;
+   
 }
 
 #sidebar {
@@ -140,7 +141,10 @@ ul ul a {
     padding-left: 30px !important;
     background: #6d7fcc;
 }
-
+ ul{
+   padding: 0;
+   margin: 0;
+ }
 
 
 
@@ -159,7 +163,7 @@ a.article:hover {
     width: calc(100% - 250px);
 
     padding: 40px;
-    height: 300vh;
+   
     transition: all 0.3s;
     position: fixed;
     top: 0;
@@ -170,7 +174,7 @@ a.article:hover {
     width: 100%;
 }
 
-
+/* EMERGENCY CALL EMERGENCY CALL EMERGENCY CALL EMERGENCY CALL EMERGENCY CALL EMERGENCY CALL EMERGENCY CALL EMERGENCY CALL*/
 .emergency-box{
     position: absolute;
     top:0;
@@ -442,6 +446,13 @@ transform: translateZ(-1px) scale(1.5);
   position: absolute;
  }
 
+ #part2-1 a{
+  border:  2px solid rgb(109, 127, 204)!important;
+  
+}
+#part3-1 a{
+border:  2px solid rgb(109, 127, 204)!important;
+}
 /* ------------------------------------------------------------------------------------------------------------------------------------
 SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES
 ---------------------------------------------------------------------------------------------------------------------------------------*/
@@ -475,16 +486,46 @@ SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES
  #you-us img{
   box-shadow: 4px 3px 5px -2px rgba(0,0,0,0.36);
  }
- #part2 img{
+ #part2-1 img{
   box-shadow: 4px 3px 5px -2px rgba(0,0,0,0.36);
  }
- #part3 img{
+
+ #part3-1 img{
   box-shadow: 4px 3px 5px -2px rgba(0,0,0,0.36);
  }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------
     MEDIAQUERIES MEDIAQUERIES MEDIAQUERIES MEDIAQUERIES MEDIAQUERIES MEDIAQUERIES MEDIAQUERIES MEDIAQUERIES MEDIAQUERIES MEDIAQUERIES MEDIAQUERIES MEDIAQUERIES
 --------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 1280px) {
+
+
+  #svg-tools{
+    top: -20%;
+    left:-15%;
+    transform: translateZ(-1px) scale(1);
+    }
+
+
+
+
+
+.emergency-logo  {
+
+  margin-top: 9rem;
+} 
+.emergency-logo img{
+  width: 15vw;
+}
+
+h1{
+  font-size: 3rem;
+}
+  }
+
+
+
 
 @media (max-width: 768px) {
     #sidebar {

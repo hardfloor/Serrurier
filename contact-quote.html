@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Serrurerie</title>
+    <title>Contact</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -177,7 +177,7 @@
                 </div>
               </div>
             </div>
-          </footer>-->
+          </footer>
 
 
 <!-- jQuery CDN -->
@@ -197,35 +197,30 @@
   src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
 </script>
 
-<script type="text/javascript">
-  $(document).ready(function () {
-      $("#sidebar").mCustomScrollbar({
-          theme: "minimal"
-      });
+<script >
+    //SIDE NAV BAR
+    $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        });
+  
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar, #content').toggleClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+    });
+  
+    // SLIDER INIT
+      $('.slider').slick({
+        infinite: true,
+        slideToShow: 1,
+        slideToScroll: 1
+      })
+    //  copyright
+    $('#year').text(new Date().getFullYear())
+  </script>
 
-      $('#sidebarCollapse').on('click', function () {
-          $('#sidebar, #content').toggleClass('active');
-          $('.collapse.in').toggleClass('in');
-          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-      });
-  });
-</script>
-
-<script>
-  //appel d'urgence
-  function masquer_div(id) {
-      if (document.getElementById(id).style.display == 'none') {
-          document.getElementById(id).style.display = 'block';
-      } else {
-          document.getElementById(id).style.display = 'none';
-      }
-  }
-
-
-
-  //  copyright
-  $('#year').text(new Date().getFullYear())
-</script>
 </body>
 
 
